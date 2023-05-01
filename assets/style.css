@@ -25,3 +25,9 @@ body{
     padding: 0px;
     margin: 0px;
 }
+
+.panel{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    font-size: 14px;
+}
