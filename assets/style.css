@@ -70,3 +70,9 @@ a{
 p {
     max-width: 50ch;
   }
+
+  .rsa{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+  }
