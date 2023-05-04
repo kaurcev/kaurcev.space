@@ -9,14 +9,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Александр Каурцев - Личный сайт | kaurcev.space</title>
+    <title>Поисковая система | kaurcev.space</title>
     <link href="/assets/style.css" rel="stylesheet">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Александр Каурцев - Личный сайт">
-    <meta property="og:description" content="Александр Каурцев - Веб разработчик и веб дизайнер.">
-    <meta property="og:url" content="http://kaurcev.space">
+    <meta property="og:title" content="Поисковая система от kaurcev.space">
+    <meta property="og:description" content="Поисковая система от kaurcev.space. Александр Каурцев - Веб разработчик и веб дизайнер.">
+    <meta property="og:url" content="http://kaurcev.space/s">
     <meta property="og:image" content="http://mini.s-shot.ru/1280x768/1000/png/?http://http:/kaurcev.space?1">
-    <meta property="og:site_name" content="Александр Каурцев">
+    <meta property="og:site_name" content="Поисковая система | kaurcev.space">
     <meta property="og:locale" content="ru_RU">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:site" content="@kaurcev">
@@ -50,7 +50,7 @@
     <div class="search1">
     <div class="gcse-searchbox"></div>
     </div>
-    <a>asd</a>
+    <a>В разработке...</a>
   </header>
 
   
@@ -147,19 +147,25 @@ header{
   justify-content: space-between; 
 }
 .search1{
-  max-width: 1000px;
+  max-width: 800px;
   width: 100%;
 }
 .gsc-webResult.gsc-result:hover {
 	border: none;
 	background-color: #f2f4f8;
 }
-@media (min-width: 768px) { 
+header a{
+  color: #212121; 
+}
+@media (min-width: 890px) { 
   .gs-webResult.gs-result{
     max-width: 800px;
   }
   .gsc-webResult.gsc-result {
      justify-content: start;
+   }
+   header{
+    flex-wrap: wrap;
    }
  }
 body{
