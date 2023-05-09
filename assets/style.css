@@ -66,6 +66,15 @@ a{
     font-family: "Rubik-Bold";
     color: #fff;
 }
+.bt{
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    background-color: #f2f4f8;
+    color: #212121;
+    border-radius: 8px;
+    margin: 4px;
+}
 
 .logo{
     height: 200px;
