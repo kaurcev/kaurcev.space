@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fetch('https://login.yandex.ru/info?&oauth_token=y0_AgAAAAAw3y83AAni0AAAAADi6G6PZjHgFAcSSZ6wGRDL4QE4clSWI1Y&format=json&jwt_secret=186f264107af4850b33ea302ef19f2a7')
+   .then(response => response.json())
+   .then( json => console.log(JSON.stringify(json)))
+   .catch( error => console.error(error))
+    </script>
+</body>
+</html>

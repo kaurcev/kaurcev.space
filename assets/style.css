@@ -149,7 +149,7 @@ a{
     max-width: 200px;
     background-color: #f2f4f8;
     color: #212121;
-    border-radius: 8px;
+    border-radius: 10px;
     margin: 4px;
 }
 .ft{
@@ -167,10 +167,19 @@ a{
     height: 200px;
 }
 
+.lg{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
 p {
     max-width: 50ch;
   }
 
+  #avatar{
+    border-radius: 20px;
+  }
   .rsa{
     position: fixed;
     bottom: 5px;

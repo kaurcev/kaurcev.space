@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru" class="center">
+
+<head>
+<meta charSet="utf-8" />
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, shrink-to-fit=no, viewport-fit=cover'>
+<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+<link href="/assets/style.css" rel="stylesheet">
+<style>
+   html{
+      background-color: #212121;
+      width: 100%;
+      height: 100vh;
+   }
+</style>
+<script src="https://yastatic.net/s3/passport-sdk/autofill/v1/sdk-suggest-with-polyfills-latest.js"></script>
+</head>
+
+<body onload="load()" class="ft">
+   <img class="lg" src="/favicon.ico" alt="kaurcev.space">
+<h1>Получение денных</h1>
+<p id="a1"></p>
+<p>Если авторизация прошла успешно, вы перейдете на главную страницу и увидете изменения.</p>
+<p class="mini">Можете вернуться на страницу</p>
+
+<script>
+var params_tmp = location.hash.substr(1).split('&'),
+    params = {};
+params_tmp.forEach(function(val) {
+    var splitter = val.split('=');
+    params[splitter[0]] = splitter[1];
+});
+function load(){
+   setCookie("auth", params.access_token);
+}
+
+</script>
+<script src="/assets/code.js"></script>
+</body>
+
+
+</html>
