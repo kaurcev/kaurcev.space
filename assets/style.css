@@ -34,14 +34,91 @@ html{
 }
 body{
     width: 100%;
-    height: 100vh;
-    padding: 0px;
+    padding: 70px 0px 0px 0px;
     margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+header{
+    position: fixed;
+    background-color: #212121;
+    border-bottom: 2px solid #313131;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 10px;
+}
+.header{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img{
+    height: 40px;
+}
+.header nav{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation{
+    width: 100%;
+    max-width: 250px;
+    margin: 2px;
+    height: fit-content;
+    padding: 10px;
+}
+.navigation a{
+    font-weight: 500;
+    width: 100%;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.navigation a img{
+    margin: 5px;
+}
+.navigation a.panel:hover{
+    background-color: transparent;
+}
+hr{
+    background-color: #212121;
+    border: none;
+    height: 2px;
+    border-radius: 10px;
+}
+.navigation a:hover{
+    background-color: #212121;
+}
+
+.content{
+    width: 100%;
+    background-color: #212121;
+    margin: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #313131;
 }
 
 .center{
     display: flex;
+    width: 100%;
+    height: 80vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
