@@ -1,26 +1,31 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" class="center">
 
 <head>
 <meta charSet="utf-8" />
 <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, shrink-to-fit=no, viewport-fit=cover'>
 <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+<link href="/assets/style.css" rel="stylesheet">
 <style>
-   html,
-   body {
-      background: #eee;
+   html{
+      background-color: #212121;
+      width: 100%;
+      height: 100vh;
    }
 </style>
 <script src="https://yastatic.net/s3/passport-sdk/autofill/v1/sdk-suggest-with-polyfills-latest.js"></script>
 </head>
 
-<body>
-   <script>
+<body class="ft">
+<h1>Авторизация</h1>
+<p>При авторизации ваши данные будут использоваться для персонализации интерфейса и упрощения работы сайта.</p>
+</body>
+<script>
    window.onload = function() {
       window.YaAuthSuggest.init({
                client_id: '3a9f4adda4d54c2aaaae6e282bdd2873',
                   response_type: 'token',
-                  redirect_uri: 'https://kaurcev.space'
+                  redirect_uri: 'https://kaurcev.space/authed'
                },
                'https://kaurcev.space', {
                   view: 'button',
@@ -44,6 +49,5 @@
             });
       };
    </script>
-</body>
 
 </html>

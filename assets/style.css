@@ -152,7 +152,17 @@ a{
     border-radius: 8px;
     margin: 4px;
 }
-
+.ft{
+    max-width: 450px;
+    background-color: #fff;
+    height: fit-content;
+    min-height: 400px;
+    justify-content: space-between;
+    border-radius: 15px;
+    color: #212121;
+    flex-direction: column;
+    padding: 10px;
+}
 .logo{
     height: 200px;
 }
